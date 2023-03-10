@@ -116,6 +116,10 @@ p {
     width: 565px;
 }
 
+.content-header {
+    margin-bottom: 35px;
+}
+
 .subtitle {
     font-size: 1.4rem;
     color: rgba(255, 255, 255, .6);
@@ -123,7 +127,7 @@ p {
 }
 
 .title {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 
     font-size: 2rem;
     color: #fff;
@@ -151,12 +155,15 @@ p {
     display: inline-block;
     padding: 12px 35px;
 
+    font-family: inherit;
     font-size: 1rem;
     line-height: 1.1;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
 
+    cursor: pointer;
+    border: 0;
     background-color: #2B7DED;
     border-radius: 5px;
 
@@ -165,6 +172,11 @@ p {
 
 .btn:hover {
     background-color: #1461cb;
+}
+
+.btn-full {
+    display: block;
+    width: 100%;
 }
 
 
@@ -236,4 +248,43 @@ p {
 
 .contacts-icon {
     margin-right: 5px;
+}
+
+
+
+/* Form
+=================*/
+
+.form {
+    width: 100%;
+    max-width: 280px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input,
+.textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+
+    border: 0;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.textarea {
+    height: 100px;
+    resize: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #fff;
 }
